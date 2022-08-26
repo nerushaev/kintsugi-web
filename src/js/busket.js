@@ -1,6 +1,14 @@
-const outputList = document.querySelector('#busket-list');
-const goodsItems = document.querySelectorAll('.cards-item');
+import { refsForBusket } from './refs';
 
-console.log(outputList);
-console.log(goodsItems);
+
+refsForBusket.goodsCards.addEventListener('click', addToLocalStorage);
+
+function addToLocalStorage(e) {
+  e.preventDefault();
+  if (e.target.nodeName !== 'BUTTON') {
+    return;
+  }
+  let goodsName = e.currentTarget
+  console.log(e.currentTarget.childNodes);
+};
 

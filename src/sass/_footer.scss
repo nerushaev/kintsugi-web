@@ -1,0 +1,13 @@
+.socials_link {
+  display: block;
+  text-align: center;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  color: black;
+}
+
+.socials {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
