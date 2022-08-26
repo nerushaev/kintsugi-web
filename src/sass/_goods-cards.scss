@@ -50,3 +50,24 @@
 .cards-item__name {
   margin-bottom: 10px;
 }
+
+//BUSKET-ICON
+
+.busket-icon {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+}
+
+.busket-amount {
+  color: green;
+  position: fixed;
+  right: 60px;
+  top: 60px;
+}
+
+.disable {
+  display: none;
+}
