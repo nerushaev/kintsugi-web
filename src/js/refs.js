@@ -1,5 +1,5 @@
 const refsForBusket = {
-  goodsCards: document.querySelector('.cards-item'),
+  goodsCards: document.querySelector('.cards-list'),
   buyGoodsBtnRef: document.querySelector('.cards-item__btn'),
   busketItemsList: document.querySelector('.items-list'),
   amountBusketRef: document.querySelector('.busket-amount'),

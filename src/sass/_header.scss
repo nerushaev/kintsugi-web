@@ -1,4 +1,4 @@
-.logo {
+.mobile-logo {
   width: 200px;
   z-index: 20;
 }
@@ -10,8 +10,17 @@
   width: 100%;
 }
 
+.mobile-header-container {
+  @include mq(tablet) {
+    display: none;
+  }
+}
+
 .header {
-  padding: 30px 20px;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .mobile-overlay {
@@ -82,4 +91,26 @@
 .mobile-menu__link {
   font-size: 18px;
   color: black;
+}
+
+.logo {
+  width: 200px;
+  display: inline-block;
+}
+
+.desktop-header {
+  display: none;
+  @include mq(tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.header-nav__list {
+  display: flex;
+}
+
+.header-nav__item:not(:last-child) {
+  margin-right: 20px;
 }
